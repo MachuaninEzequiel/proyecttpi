@@ -1,14 +1,28 @@
-import React from 'react'
+import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 
-import { Clientes, Proveedores, Empleado, Recuadro} from './components'
+import {
+  Clientes,
+  Proveedores,
+  Empleado,
+  Recuadro,
+  Lista,
+  Modale,
+  Navbar,
+} from "./components";
 
 const App = () => {
   return (
     <div>
-        <Recuadro/>
+      <div className="gradient__bg">
+        <Navbar />
+      </div>
+      <div>
+        <Lista />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

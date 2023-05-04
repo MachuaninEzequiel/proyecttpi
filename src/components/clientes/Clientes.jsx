@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Clientes = () => {
   return (
@@ -152,7 +152,7 @@ const Clientes = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Clientes
+export default Clientes;
