@@ -19,7 +19,7 @@ const App = () => {
         <Navbar />
       </div>
       <div>
-        <Lista />
+        <Empleado />
       </div>
     </div>
   );
