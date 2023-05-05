@@ -61,29 +61,6 @@ const Lista = () => {
                   </tr>
                 </thead>
                 <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
-                <LineaCliente />
               </table>
             </div>
           </div>

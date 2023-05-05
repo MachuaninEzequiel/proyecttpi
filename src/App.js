@@ -10,6 +10,7 @@ import {
   Lista,
   Modale,
   Navbar,
+  Login,
 } from "./components";
 
 const App = () => {
