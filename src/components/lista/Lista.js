@@ -49,7 +49,7 @@ const Lista = () => {
                 style={{ width: "50rem", placeItems: "center" }}
               >
                 <caption>Lista de Clientes</caption>
-                <thead>
+                <thead class="table-light sticky-top ">
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre</th>
@@ -106,34 +106,22 @@ const Lista = () => {
             >
               <table
                 class="table caption-top table-hover "
-                style={{ width: "50rem", placeItems: "center" }}
+                style={{ width: "60rem", placeItems: "center" }}
               >
                 <caption>Lista de Proveedores</caption>
-                <thead>
+                <thead class="table-light sticky-top ">
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
+                    <th scope="col">Codigo Postal</th>
                     <th scope="col">Correo</th>
+                    <th scope="col">Direccion</th>
                     <th scope="col">Telefono</th>
                     <th scope="col">Cuil</th>
                     <th scope="col"> Acciones </th>
                   </tr>
                 </thead>
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
-                <LineaProveedores />
+
                 <LineaProveedores />
               </table>
             </div>

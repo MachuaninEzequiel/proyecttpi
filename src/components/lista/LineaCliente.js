@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+//import React, { useState, useEffect } from "react";
 
 import cliente from "./cliente";
 
@@ -12,7 +12,7 @@ const LineaCliente = () => {
             <td>{user.nombre}</td>
             <td>{user.apellido}</td>
             <td>{user.correo}</td>
-            <td>{user.correo}</td>
+            <td>{user.telefono}</td>
             <td>{user.direccion}</td>
             <td>
               <svg

@@ -4,5 +4,6 @@ export { default as Empleado } from "./empleado/Empleado";
 export { default as Recuadro } from "./recuadro/Recuadro";
 export { default as Lista } from "./lista/Lista";
 export { default as Modale } from "./modale/Modale";
+export { default as Navbar2 } from "./navbar/Navbar2";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Login } from "./login/Login";

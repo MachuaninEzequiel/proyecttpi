@@ -11,13 +11,14 @@ import {
   Modale,
   Navbar,
   Login,
+  Navbar2,
 } from "./components";
 
 const App = () => {
   return (
     <div>
       <div className="gradient__bg">
-        <Navbar />
+        <Navbar2 />
       </div>
       <div>
         <Lista />
