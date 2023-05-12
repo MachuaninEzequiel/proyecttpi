@@ -1,9 +1,8 @@
 import React from "react";
 
 import LineaCliente from "./LineaCliente";
-import LineaProveedores from "./LineaProveedores";
 
-const Lista = () => {
+const ListaClientes = () => {
   return (
     <>
       {/* Forma del recuadro*/}
@@ -20,7 +19,7 @@ const Lista = () => {
           className="rounded-3  shadow "
           style={{
             width: "70rem",
-            height: "35rem",
+            height: "45rem",
             display: "grid",
             placeItems: "center",
             backgroundColor: "white",
@@ -61,68 +60,6 @@ const Lista = () => {
                   </tr>
                 </thead>
                 <LineaCliente />
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        style={{
-          display: "grid",
-          placeItems: "center",
-          backgroundColor: "#f2f2f2",
-          paddingTop: "2rem",
-          paddingBottom: "6rem",
-        }}
-      >
-        <div
-          className="rounded-3 shadow "
-          style={{
-            width: "70rem",
-            height: "35rem",
-            display: "grid",
-            placeItems: "center",
-            backgroundColor: "white",
-          }}
-        >
-          <div
-            style={{
-              display: "grid",
-              placeItems: "center",
-            }}
-          >
-            {/* Scroll de la grilla */}
-            <div
-              className="rounded-3 py-5 shadow "
-              class="overflow-auto"
-              style={{
-                width: "67rem",
-                height: "30rem",
-                display: "grid",
-                placeItems: "center",
-                backgroundColor: "white",
-              }}
-            >
-              <table
-                class="table caption-top table-hover "
-                style={{ width: "60rem", placeItems: "center" }}
-              >
-                <caption>Lista de Proveedores</caption>
-                <thead class="table-light sticky-top ">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Codigo Postal</th>
-                    <th scope="col">Correo</th>
-                    <th scope="col">Direccion</th>
-                    <th scope="col">Telefono</th>
-                    <th scope="col">Cuil</th>
-                    <th scope="col"> Acciones </th>
-                  </tr>
-                </thead>
-
-                <LineaProveedores />
               </table>
             </div>
           </div>
@@ -291,4 +228,4 @@ const Lista = () => {
   );
 };
 
-export default Lista;
+export default ListaClientes;

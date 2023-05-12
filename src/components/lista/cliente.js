@@ -106,6 +106,91 @@ const cliente = [
     telefono: "123332445",
     direccion: "NiponStreet989",
   },
+  {
+    "#": "6",
+    nombre: "Ricardo",
+    apellido: "Lopez",
+    correo: "rl@prueba",
+    telefono: "123409915",
+    direccion: "NiponStreet5",
+  },
+
+  {
+    "#": "7",
+    nombre: "Esteban",
+    apellido: "Garmendia",
+    correo: "eg@prueba",
+    telefono: "12311245",
+    direccion: "NiponStreet45",
+  },
+  {
+    "#": "6",
+    nombre: "Ricardo",
+    apellido: "Lopez",
+    correo: "rl@prueba",
+    telefono: "123409915",
+    direccion: "NiponStreet5",
+  },
+
+  {
+    "#": "7",
+    nombre: "Esteban",
+    apellido: "Garmendia",
+    correo: "eg@prueba",
+    telefono: "12311245",
+    direccion: "NiponStreet45",
+  },
+  {
+    "#": "6",
+    nombre: "Ricardo",
+    apellido: "Lopez",
+    correo: "rl@prueba",
+    telefono: "123409915",
+    direccion: "NiponStreet5",
+  },
+
+  {
+    "#": "7",
+    nombre: "Esteban",
+    apellido: "Garmendia",
+    correo: "eg@prueba",
+    telefono: "12311245",
+    direccion: "NiponStreet45",
+  },
+  {
+    "#": "6",
+    nombre: "Ricardo",
+    apellido: "Lopez",
+    correo: "rl@prueba",
+    telefono: "123409915",
+    direccion: "NiponStreet5",
+  },
+
+  {
+    "#": "7",
+    nombre: "Esteban",
+    apellido: "Garmendia",
+    correo: "eg@prueba",
+    telefono: "12311245",
+    direccion: "NiponStreet45",
+  },
+  {
+    "#": "6",
+    nombre: "Ricardo",
+    apellido: "Lopez",
+    correo: "rl@prueba",
+    telefono: "123409915",
+    direccion: "NiponStreet5",
+  },
+
+  {
+    "#": "7",
+    nombre: "Esteban",
+    apellido: "Garmendia",
+    correo: "eg@prueba",
+    telefono: "12311245",
+    direccion: "NiponStreet45",
+  },
 ];
 
 export default cliente;

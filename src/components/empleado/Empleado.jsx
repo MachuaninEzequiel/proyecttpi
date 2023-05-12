@@ -8,8 +8,8 @@ const Empleado = () => {
           display: "grid",
           placeItems: "center",
           backgroundColor: "#f2f2f2",
-          paddingTop: "2rem",
-          paddingBottom: "2rem",
+          paddingTop: "4rem",
+          paddingBottom: "12rem",
         }}
       >
         <div
@@ -29,10 +29,19 @@ const Empleado = () => {
           >
             <h2 className="mb-4">Registrar nuevo empleado</h2>
             <form className="">
-              <label for="AyN" className="form-label">
-                Apellido y Nombre
+              <label for="Nombre" className="form-label">
+                Nombre
               </label>
-              <input type="email" className="form-control imput" id="AyN" />
+              <input type="Nombre" className="form-control imput" id="Nombre" />
+              <br />
+              <label for="Apellido" className="form-label">
+                Apellido
+              </label>
+              <input
+                type="Apellido"
+                className="form-control imput"
+                id="Apellido"
+              />
               <br />
               <label for="DNI" className="form-label">
                 DNI
@@ -54,10 +63,36 @@ const Empleado = () => {
               </label>
               <input type="date" className="form-control imput" id="Fnacim" />
               <br />
-              <label for="PyC" className="form-label">
-                Provincia y Ciudad
+              <label for="Provincia" className="form-label">
+                Provincia
               </label>
-              <input type="text" className="form-control imput" id="PyC" />
+              <select id="Provincia" className="form-select imput">
+                <option selected>...</option>
+                <option>Chaco</option>
+                <option>Catamarca</option>
+                <option>Chubut</option>
+                <option>Buenos Aires</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Rios</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa </option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Salta</option>
+                <option>Río Negro</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tucumán</option>
+                <option>Tierra del Fuego</option>
+              </select>
+              {/*<input type="text" className="form-control imput" id="PyC" />*/}
               <br />
               <label for="correo" className="form-label">
                 Direccion de correo electronico
@@ -80,7 +115,7 @@ const Empleado = () => {
               />
               <br />
               <label for="inputState" className="form-label"></label>
-              <label for="inputCity" className="form-label">
+              <label for="inputGenero" className="form-label">
                 Genero
               </label>
               <select id="inputState" className="form-select imput">
@@ -94,24 +129,7 @@ const Empleado = () => {
                 Usuario
               </label>
               <input type="text" className="form-control imput" id="Usuario" />
-              <br />
-              <label for="Contraseña" className="form-label">
-                Contraseña
-              </label>
-              <input
-                type="password"
-                className="form-control imput"
-                id="Contraseña"
-              />
-              <br />
-              <label for="Confcontraseña" className="form-label">
-                Confirme contraseña
-              </label>
-              <input
-                type="password"
-                className="form-control imput"
-                id="Confcontraseña"
-              />
+
               <br />
               <br />
               <button type="submit" className="btn btn-primary imput">

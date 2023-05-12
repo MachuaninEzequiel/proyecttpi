@@ -1,6 +1,7 @@
 import React from "react";
 
 import proveedores from "./proveedores";
+import "./lineaEstilos.css";
 
 const LineaProveedores = () => {
   return (
@@ -9,12 +10,20 @@ const LineaProveedores = () => {
         {proveedores.map((user) => (
           <tr>
             <th scope="row">{user["#"]}</th>
-            <td>{user.nombre}</td>
-            <td>{user.codigopostal}</td>
-            <td>{user.correo}</td>
-            <td>{user.direccion}</td>
-            <td>{user.telefono}</td>
-            <td>{user.cuil}</td>
+            <td></td>
+            <td className="centrado">{user.nombre}</td>
+            <td></td>
+
+            <td className="centrado">{user.cuil}</td>
+            <td></td>
+            <td className="centrado">{user.correo}</td>
+            <td></td>
+            <td className="centrado">{user.direccion}</td>
+            <td></td>
+            <td className="centrado">{user.telefono}</td>
+            <td></td>
+            <td className="centrado">{user.codigopostal}</td>
+            <td></td>
             <td>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

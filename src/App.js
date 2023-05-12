@@ -4,13 +4,16 @@ import "./App.css";
 
 import {
   Clientes,
-  Proveedores,
   Empleado,
   Recuadro,
-  Lista,
+  Search,
+  ListaClientes,
+  ListaProveedores,
   Modale,
-  Navbar,
   Login,
+  Login1,
+  Navbar,
+  Navbar1,
   Navbar2,
 } from "./components";
 
@@ -18,10 +21,10 @@ const App = () => {
   return (
     <div>
       <div className="gradient__bg">
-        <Navbar2 />
+        <Navbar1 />
       </div>
       <div>
-        <Lista />
+        <Empleado />
       </div>
     </div>
   );
