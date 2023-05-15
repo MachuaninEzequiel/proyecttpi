@@ -9,22 +9,23 @@ import {
   Search,
   ListaClientes,
   ListaProveedores,
+  ListaStock,
   Modale,
   Login,
   Login1,
-  Navbar,
+  //Navbar,
   Navbar1,
-  Navbar2,
+  //Navbar2
 } from "./components";
 
 const App = () => {
   return (
     <div>
-      <div className="gradient__bg">
+      <div className="gradient__bg padre">
         <Navbar1 />
-      </div>
-      <div>
-        <Empleado />
+        <div className="hijo">
+          <ListaStock />
+        </div>
       </div>
     </div>
   );

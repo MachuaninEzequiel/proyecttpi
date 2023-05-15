@@ -1,4 +1,7 @@
 import React from "react";
+import {Imprimir} from './modalBoton'
+
+import './styles.css'
 
 import LineaProveedores from "./LineaProveedores";
 import { Search } from "@mui/icons-material";
@@ -48,7 +51,7 @@ const ListaProveedores = () => {
                 style={{ width: "74rem", placeItems: "center" }}
               >
                 <caption class="mb-3">
-                  <h2>Lista de Proveedores</h2>
+                  <h2>Stock</h2>
                 </caption>
                 <thead class="table-light sticky-top ">
                   <tr>
@@ -239,14 +242,26 @@ const ListaProveedores = () => {
                 </thead>
 
                 <LineaProveedores />
+
+
               </table>
             </div>
+              <Imprimir/>
+            {/* <div className="contenedor-boton">
+              {/* <button className="btn btn-primary d-inline-block me-2 boton-foot cancelar">Cancelar</button> */}
+              {/* <button className="btn btn-secondary d-inline-block boton-foot imprimir">Imprimir</button> 
+
+
+            </div> */}
+
+            
+
           </div>
         </div>
       </div>
 
       <div
-        class="modal fade"
+        class="modal fade"  
         id="infocliente"
         tabindex="-1"
         aria-labelledby="infoclienteModalLabel"
@@ -268,7 +283,6 @@ const ListaProveedores = () => {
             <div class="modal-body">
               <form>
                 <div class="position-absolute top-0 start-0 translate-middle">
-                  <p class="h3"> PEPE </p>
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label">
