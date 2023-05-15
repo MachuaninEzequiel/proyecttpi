@@ -1,0 +1,5 @@
+import React from "react";
+
+export const Principal = () => {
+  return null;
+};
