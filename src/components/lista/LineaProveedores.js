@@ -24,13 +24,13 @@ const LineaProveedores = () => {
             <td></td>
             <td className="centrado">{user.codigopostal}</td>
             <td></td>
-            <td>
+            <td className="centrado">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
                 height="18"
                 fill="currentColor"
-                class="bi bi-journals"
+                class="bi bi-journals mr-2 "
                 viewBox="0 0 16 16"
                 type="button"
                 data-bs-toggle="modal"
@@ -45,7 +45,7 @@ const LineaProveedores = () => {
                 width="18"
                 height="18"
                 fill="currentColor"
-                class="bi bi-pencil-square"
+                class="bi bi-pencil-square mr-2"
                 viewBox="0 0 16 16"
                 type="button"
                 data-bs-toggle="modal"

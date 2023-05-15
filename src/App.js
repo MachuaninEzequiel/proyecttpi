@@ -1,4 +1,6 @@
 import React from "react";
+//import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 
@@ -17,16 +19,22 @@ import {
   Navbar2,
 } from "./components";
 
+import { VentasClientes, VentasProv } from "./pages";
+
 const App = () => {
   return (
+    //<BrowserRouter>
+    //<Routes>
     <div>
       <div className="gradient__bg">
         <Navbar1 />
       </div>
       <div>
-        <Empleado />
+        <VentasProv />
       </div>
     </div>
+    //</Routes>
+    //</BrowserRouter>
   );
 };
 

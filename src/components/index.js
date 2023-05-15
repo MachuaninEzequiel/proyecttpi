@@ -10,3 +10,4 @@ export { default as Navbar1 } from "./navbar/Navbar1";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Login } from "./login/Login";
 export { default as Login1 } from "./login/Login1";
+export { default as BotonD } from "./botondesplegable/BotonD";
