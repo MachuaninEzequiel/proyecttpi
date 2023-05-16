@@ -10,7 +10,6 @@ const LineaProveedores = () => {
         {proveedores.map((user) => (
           <tr>
             <th scope="row">{user["#"]}</th>
-            <td></td>
             <td className="centrado">{user.nombre}</td>
             <td></td>
 

@@ -60,13 +60,13 @@ const Navbar1 = () => {
 
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="3">
-                    Inicio
+                    <h2>Inicio</h2>
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="4">
-                    Enlace
+                    <h4>Productos</h4>
                   </a>
                 </li>
 
@@ -79,32 +79,48 @@ const Navbar1 = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    <h5>Listados</h5>
                   </a>
                   <ul
-                    class="dropdown-menu"
+                    className="listaDrop"
+
+                    class="dropdown-menu listaDrop"
                     aria-labelledby="offcanvasNavbarDropdown"
                   >
                     
                     <li>
-                      <a class="dropdown-item" href="6">
-                        Acción
+                      <a class="dropdown-item subItem" href="6">
+                        Compras
                       </a>
                     </li>
+                    
+                    
+                    
                     <li>
-                      <a class="dropdown-item" href="5">
-                        Otra acción
+                      <a class="dropdown-item subItem" href="5">
+                        Ventas
                       </a>
                     </li>
-                    <li>
+                    
+                    
+                    
+                    {/* <li>
                       <hr class="dropdown-divider" />
-                    </li>
+                    </li> */}
+                    
+                    
                     <li>
-                      <a class="dropdown-item" href="1">
-                        Algo más aquí
+                      <a class="dropdown-item subItem" href="1">
+                        Deudores
                       </a>
                     </li>
                   
+                    <li>
+                      <a class="dropdown-item subItem" href="1">
+                        Usuarios y Proveedores
+                      </a>
+                    </li>
+
                   
                   </ul>
                 
@@ -113,9 +129,8 @@ const Navbar1 = () => {
               
               
               </ul>
-
-
-
+              
+              {/*
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
@@ -126,7 +141,7 @@ const Navbar1 = () => {
                 <button class="btn btn-outline-success" type="submit">
                   Buscar
                 </button>
-              </form>
+              </form> */}
 
 
 

@@ -17,6 +17,7 @@ import {
   Navbar1,
   //Navbar2
 } from "./components";
+import ListaVentas from "./components/lista/ListaVentas";
 
 const App = () => {
   return (
