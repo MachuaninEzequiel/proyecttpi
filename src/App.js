@@ -1,8 +1,10 @@
 import React from "react";
-//import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
+import Layout from "./components/Layout";
+import { AdminProvider } from "./Context";
 
 import {
   Clientes,
@@ -19,22 +21,29 @@ import {
   Navbar2,
 } from "./components";
 
-import { VentasClientes, VentasProv } from "./pages";
+import {
+  VentasClientes,
+  VentasProv,
+  RegistrarCliente,
+  RegistrarProveedor,
+  LoginHome,
+} from "./pages";
 
 const App = () => {
   return (
-    //<BrowserRouter>
-    //<Routes>
-    <div>
-      <div className="gradient__bg">
-        <Navbar1 />
-      </div>
-      <div>
-        <VentasProv />
-      </div>
-    </div>
-    //</Routes>
-    //</BrowserRouter>
+    <BrowserRouter>
+      <AdminProvider>
+        <Layout>
+          <Routes>
+            <Route element={<LoginHome />} path="/" />
+            <Route element={<VentasClientes />} path="Clientes" />
+            <Route element={<VentasProv />} path="Proveedores" />
+            <Route element={<RegistrarCliente />} path="RegCliente" />
+            <Route element={<RegistrarProveedor />} path="RegProv" />
+          </Routes>
+        </Layout>
+      </AdminProvider>
+    </BrowserRouter>
   );
 };
 
