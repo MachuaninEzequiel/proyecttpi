@@ -37,12 +37,12 @@ const Navbar1 = () => {
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="3">
+                  <a class="nav-link" href="Proveedores">
                     Proveedores
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="4">
+                  <a class="nav-link" href="Clientes">
                     Clientes
                   </a>
                 </li>

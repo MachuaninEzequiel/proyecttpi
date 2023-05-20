@@ -1,6 +1,7 @@
 //import React, { useState, useEffect } from "react";
 
 import cliente from "./cliente";
+import "./lineaEstilos.css";
 
 const LineaCliente = () => {
   return (
@@ -9,12 +10,18 @@ const LineaCliente = () => {
         {cliente.map((user) => (
           <tr>
             <th scope="row">{user["#"]}</th>
-            <td>{user.nombre}</td>
-            <td>{user.apellido}</td>
-            <td>{user.correo}</td>
-            <td>{user.telefono}</td>
-            <td>{user.direccion}</td>
-            <td>
+            <td></td>
+            <td className="centrado">{user.nombre}</td>
+            <td></td>
+            <td className="centrado">{user.apellido}</td>
+            <td></td>
+            <td className="centrado">{user.correo}</td>
+            <td></td>
+            <td className="centrado">{user.telefono}</td>
+            <td></td>
+            <td className="centrado">{user.direccion}</td>
+            <td></td>
+            <td className="centrado">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

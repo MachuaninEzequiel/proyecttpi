@@ -256,7 +256,7 @@ const ListaProveedores = () => {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="infoclienteModalLabel">
-                Informacion del Ciente
+                Informacion del Proveedor
               </h5>
               <button
                 type="button"
@@ -343,7 +343,7 @@ const ListaProveedores = () => {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="modificarclienteModalLabel">
-                Modificar Cliente
+                Modificar Proveedor
               </h5>
               <button
                 type="button"
@@ -356,6 +356,48 @@ const ListaProveedores = () => {
               <form>
                 <table class="table">
                   <tbody>
+                    <tr>
+                      <th scope="row">NOMBRE:</th>
+                      <td>
+                        <div class="input-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nombre"
+                            aria-label="Nombre"
+                            aria-describedby="button-addon2"
+                          />
+                          <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                          >
+                            B
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">APELLIDO:</th>
+                      <td>
+                        <div class="input-group mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Apellido"
+                            aria-label="Apellido"
+                            aria-describedby="button-addon2"
+                          />
+                          <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                          >
+                            B
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
                     <tr>
                       <th scope="row">ID:</th>
                       <td>
