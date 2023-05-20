@@ -27,7 +27,7 @@ const Empleado = () => {
               placeItems: "center",
             }}
           >
-            <h2 className="mb-4">Registrar nuevo empleado</h2>
+            <h2 className="mb-4">Registrar nuevo Cliente</h2>
             <form className="">
               <label for="Nombre" className="form-label">
                 Nombre
@@ -125,15 +125,27 @@ const Empleado = () => {
                 <option selected>Prefiero no decirlo</option>
               </select>
               <br />
-              <label for="Usuario" className="form-label">
-                Usuario
+              <label for="Contraseña" className="form-label">
+                Contraseña
               </label>
-              <input type="text" className="form-control imput" id="Usuario" />
-
+              <input
+                type="password"
+                className="form-control imput"
+                id="contraseña"
+              />
+              <br />
+              <label for="confContraseña" className="form-label">
+                Confirmar Contraseña
+              </label>
+              <input
+                type="password"
+                className="form-control imput"
+                id="confcontraseña"
+              />
               <br />
               <br />
               <button type="submit" className="btn btn-primary imput">
-                Registrar Empleado
+                Registrar Cliente
               </button>
             </form>
           </div>

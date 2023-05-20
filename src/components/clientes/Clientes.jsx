@@ -8,7 +8,8 @@ const Clientes = () => {
           display: "grid",
           placeItems: "center",
           backgroundColor: "#f2f2f2",
-          paddingTop: "2rem",
+          paddingTop: "4rem",
+          paddingBottom: "2rem",
         }}
       >
         <div
@@ -20,93 +21,133 @@ const Clientes = () => {
             backgroundColor: "white",
           }}
         >
-          <h2 className="mb-4">Nuevo cliente particular</h2>
           <div
             style={{
               display: "grid",
               placeItems: "center",
             }}
           >
-            <div class="form-floating">
+            <h2 className="mb-4">Registrar nuevo Proveedor</h2>
+            <form className="">
+              <label for="Nombre" className="form-label">
+                Nombre
+              </label>
+              <input type="Nombre" className="form-control imput" id="Nombre" />
+              <br />
+              <label for="Apellido" className="form-label">
+                Apellido
+              </label>
               <input
-                type="text"
+                type="Apellido"
                 className="form-control imput"
-                id="floatingInput"
-                placeholder="Apellido y Nombre"
+                id="Apellido"
               />
               <br />
-              <label for="floatingInput">Apellido y Nombre</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="text"
-                className="form-control imput"
-                id="floatingPassword"
-                placeholder="CUIL/CUIT"
-              />
+              <label for="DNI" className="form-label">
+                DNI
+              </label>
+              <input type="Number" className="form-control imput" id="DNI" />
               <br />
-              <label for="floatingPassword">CUIL / CUIT</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="Number"
-                className="form-control imput"
-                id="floatingPassword"
-                placeholder="Ntelef"
-              />
-              <br />
-              <label for="floatingPassword">Numero de telefono</label>
-            </div>
-            <div class="form-floating">
+              <label for="Telef" className="form-label">
+                Telefono
+              </label>
               <input
                 type="Number"
                 className="form-control imput"
-                id="floatingPassword"
-                placeholder="DNI"
+                id="Telef"
+                placeholder="+54 "
               />
               <br />
-              <label for="floatingPassword">DNI</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="date"
-                className="form-control imput"
-                id="floatingPassword"
-                placeholder="Fnac"
-              />
+              <label for="Fnacim" className="form-label">
+                Fecha de nacimiento
+              </label>
+              <input type="date" className="form-control imput" id="Fnacim" />
               <br />
-              <label for="floatingPassword">Fecha de nacimiento</label>
-            </div>
-            <div class="form-floating">
+              <label for="Provincia" className="form-label">
+                Provincia
+              </label>
+              <select id="Provincia" className="form-select imput">
+                <option selected>...</option>
+                <option>Chaco</option>
+                <option>Catamarca</option>
+                <option>Chubut</option>
+                <option>Buenos Aires</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Rios</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa </option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquén</option>
+                <option>Salta</option>
+                <option>Río Negro</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tucumán</option>
+                <option>Tierra del Fuego</option>
+              </select>
+              {/*<input type="text" className="form-control imput" id="PyC" />*/}
+              <br />
+              <label for="correo" className="form-label">
+                Direccion de correo electronico
+              </label>
               <input
                 type="text"
                 className="form-control imput"
-                id="floatingPassword"
-                placeholder="Email"
+                id="correo"
+                placeholder="Nombre@ejemplo"
               />
               <br />
-              <label for="floatingPassword">Correo electronico</label>
-            </div>
-          </div>
-          <br />
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <p className="fst-italic">Codigo Cliente: </p>
-                <p className="fst-italic">Fecha de creacion: </p>
-                <p className="fst-italic">hora de creacion: </p>
-              </div>
-              <div className="col"></div>
-              <div className="col">
-                <div className="">
-                  <br />
-                  <br />
-                  <button className="btn btn-primary me-md-2" type="button">
-                    Confirmar
-                  </button>
-                </div>
-              </div>
-            </div>
+              <label for="ConfCorreo" className="form-label">
+                Confirmar correo electronico
+              </label>
+              <input
+                type="text"
+                className="form-control imput"
+                id="ConfCorreo"
+                placeholder="Nombre@ejemplo"
+              />
+              <br />
+              <label for="inputState" className="form-label"></label>
+              <label for="inputGenero" className="form-label">
+                Genero
+              </label>
+              <select id="inputState" className="form-select imput">
+                <option>...</option>
+                <option selected>Femenino</option>
+                <option selected>Masculino</option>
+                <option selected>Prefiero no decirlo</option>
+              </select>
+              <br />
+              <label for="Contraseña" className="form-label">
+                Contraseña
+              </label>
+              <input
+                type="password"
+                className="form-control imput"
+                id="contraseña"
+              />
+              <br />
+              <label for="confContraseña" className="form-label">
+                Confirmar Contraseña
+              </label>
+              <input
+                type="password"
+                className="form-control imput"
+                id="confcontraseña"
+              />
+              <br />
+              <br />
+              <button type="submit" className="btn btn-primary imput">
+                Registrar Proveedor
+              </button>
+            </form>
           </div>
         </div>
       </div>
