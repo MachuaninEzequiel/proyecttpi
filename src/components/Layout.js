@@ -11,9 +11,12 @@ const Layout = ({ children }) => {
     if (isAdmin) adminContext.setIsAdmin(true);
   }, []);
 
+  const username = localStorage.getItem("username");
+
   return (
     <div>
-      <Navbar1 />
+      {username ? <Navbar1 /> : null}
+
       {children}
     </div>
   );

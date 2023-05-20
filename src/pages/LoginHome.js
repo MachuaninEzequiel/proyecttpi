@@ -1,5 +1,5 @@
 //import { Login1 } from "../components/index";
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
@@ -13,17 +13,56 @@ const normalCredentials = {
   isAdmin: false,
 };
 
+const produccionCredentials = {
+  firstName: "prod",
+  lastName: "prod",
+  email: "prod@prod",
+  password: "prod",
+  isPord: false,
+};
+
+const ventasCredentials = {
+  firstName: "ventas",
+  lastName: "ventas",
+  email: "ventas@ventas",
+  password: "ventas",
+  isVenta: false,
+};
+
 function validateCredentials(credentials) {
   return (
-    credentials[0].value === normalCredentials.firstName &&
-    credentials[1].value === normalCredentials.lastName &&
-    credentials[2].value === normalCredentials.email &&
-    credentials[3].value === normalCredentials.password
+    (credentials[0].value === normalCredentials.firstName ||
+      credentials[0].value === produccionCredentials.firstName ||
+      credentials[0].value === ventasCredentials.firstName) &&
+    (credentials[1].value === normalCredentials.lastName ||
+      credentials[1].value === produccionCredentials.lastName ||
+      credentials[1].value === ventasCredentials.lastName) &&
+    (credentials[2].value === normalCredentials.email ||
+      credentials[2].value === produccionCredentials.email ||
+      credentials[2].value === ventasCredentials.email) &&
+    (credentials[3].value === produccionCredentials.password ||
+      credentials[3].value === normalCredentials.password ||
+      credentials[3].value === ventasCredentials.password)
   );
+}
+
+//<button onClick={cerrarsesion}  ></button>
+
+function cerrarsesion() {
+  localStorage.removeItem("username");
+  localStorage.removeItem("isAdmin");
+  localStorage.removeItem("isProd");
 }
 
 const LoginHome = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const username = localStorage.getItem("username");
+    if (username) {
+      navigate("Proveedores");
+    }
+  }, []);
 
   const adminContext = useContext(Context);
 
@@ -34,6 +73,20 @@ const LoginHome = () => {
       localStorage.setItem("isAdmin", JSON.stringify(true));
       adminContext?.setIsAdmin(true);
       navigate("Clientes");
+    }
+    //raro
+    if (validateCredentials(e.target)) {
+      localStorage.setItem("username", e.target[0].value);
+      localStorage.setItem("isProd", JSON.stringify(true));
+      adminContext?.setIsProd(true);
+      navigate("Proveedores");
+    }
+
+    if (validateCredentials(e.target)) {
+      localStorage.setItem("username", e.target[0].value);
+      localStorage.setItem("isVentas", JSON.stringify(true));
+      adminContext?.setIsVentas(true);
+      navigate("RegProv");
     }
   };
 

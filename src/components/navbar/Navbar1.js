@@ -1,6 +1,12 @@
 import React from "react";
 
 const Navbar1 = () => {
+  function cerrarsesion() {
+    localStorage.removeItem("username");
+    localStorage.removeItem("isAdmin");
+    localStorage.removeItem("isProd");
+  }
+
   return (
     <>
       <nav class="navbar  ">
@@ -45,6 +51,9 @@ const Navbar1 = () => {
                   <a class="nav-link" href="Clientes">
                     Clientes
                   </a>
+                </li>
+                <li class="nav-item">
+                  <button onClick={cerrarsesion}> Cerrar Sesion</button>
                 </li>
               </ul>
             </div>
