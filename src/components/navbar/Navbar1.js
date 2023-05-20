@@ -53,7 +53,9 @@ const Navbar1 = () => {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <button onClick={cerrarsesion}> Cerrar Sesion</button>
+                  <a class="nav-link" href="/">
+                    <button onClick={cerrarsesion}> Cerrar Sesion</button>
+                  </a>
                 </li>
               </ul>
             </div>
