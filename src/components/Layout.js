@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../Context";
 import Navbar1 from "./navbar/Navbar1";
+import Navbar3 from "./navbar/Navbar3";
+import Navbar4 from "./navbar/Navbar4";
 
 const Layout = ({ children }) => {
   const adminContext = useContext(Context);
@@ -15,7 +17,9 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      {username ? <Navbar1 /> : null}
+      {username === "prod" ? <Navbar1 /> : null}
+      {username === "ventas" ? <Navbar3 /> : null}
+      {username === "test" ? <Navbar4 /> : null}
 
       {children}
     </div>
