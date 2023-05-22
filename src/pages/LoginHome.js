@@ -104,12 +104,12 @@ const LoginHome = () => {
   return (
     <>
       <section class="text-center text-lg-start">
-        <div class="container py-4">
+        <div class="container py-0">
           <div class="row g-0 align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
               <div class="card cascading-right cardbg ">
                 <div class="card-body p-5 shadow-5 text-center">
-                  <h2 class="fw-bold mb-5">Sign up now</h2>
+                  <h2 class="fw-bold mb-5">Iniciar Sesion</h2>
                   <form onSubmit={handleSubmit}>
                     <div class="row">
                       <div class="col-md-6 mb-4">
@@ -120,7 +120,7 @@ const LoginHome = () => {
                             class="form-control"
                           />
                           <label class="form-label" for="form3Example1">
-                            First name
+                            Nombre
                           </label>
                         </div>
                       </div>
@@ -132,7 +132,7 @@ const LoginHome = () => {
                             class="form-control"
                           />
                           <label class="form-label" for="form3Example2">
-                            Last name
+                            Apellido
                           </label>
                         </div>
                       </div>
@@ -145,7 +145,7 @@ const LoginHome = () => {
                         class="form-control"
                       />
                       <label class="form-label" for="form3Example3">
-                        Email address
+                        Correo electronico
                       </label>
                     </div>
 
@@ -156,22 +156,22 @@ const LoginHome = () => {
                         class="form-control"
                       />
                       <label class="form-label" for="form3Example4">
-                        Password
+                        Contraseña
                       </label>
                     </div>
 
                     <button
                       type="submit"
-                      class="btn btn-primary btn-block mb-4"
+                      class="btn btn-success btn-block mb-4"
                     >
-                      Sign up
+                      Ingresar
                     </button>
                   </form>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-5 mb-4 mt-4 mb-lg-0">
+            <div class="col-lg-5 mb-2 mt-0 mb-lg-0">
               <img
                 src="https://png.pngtree.com/background/20210710/original/pngtree-garbage-classification-recycling-picture-image_1039212.jpg"
                 class="w-100 rounded-4 shadow-4"

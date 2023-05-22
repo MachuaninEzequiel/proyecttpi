@@ -113,7 +113,7 @@ export class ListaMateriaPrima extends React.Component {
             className="rounded-3  shadow "
             style={{
               width: "100%",
-              height: "33rem",
+              height: "42rem",
               display: "grid",
               placeItems: "center",
               backgroundColor: "white",
@@ -124,6 +124,7 @@ export class ListaMateriaPrima extends React.Component {
             <Container
               style={{
                 padding: "15px",
+                height: "40rem",
               }}
             >
               <div className="filtros">
@@ -158,7 +159,7 @@ export class ListaMateriaPrima extends React.Component {
                 }}
               />
               <div className="scroll-container">
-                <Table>
+                <Table style={{ height: "100%" }}>
                   <thead
                     style={{
                       color: "#ffffff",
@@ -442,8 +443,16 @@ export class ListaMateriaPrima extends React.Component {
               </div>
             </ModalHeader>
             <ModalBody>
-              <div className="imgReporte">
-                <img src={imgReporMP} />
+              <div
+                className="imgReporte"
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <img
+                  style={{
+                    width: "100%",
+                  }}
+                  src={imgReporMP}
+                />
               </div>
             </ModalBody>
             <ModalFooter>

@@ -97,8 +97,18 @@ const Navbar1 = () => {
                     >
                       Registrar nuevo Cliente
                     </a>
-                    <button onClick={cerrarsesion}>
-                      <a href="/">cerrarsesion</a>
+                    <button
+                      type="submit"
+                      class="btn btn-success btn-block mb-4"
+                      onClick={cerrarsesion}
+                    >
+                      <a
+                        style={{ color: "#9b9a9a" }}
+                        class="nav-link ms-3 my-1"
+                        href="/"
+                      >
+                        cerrarsesion
+                      </a>
                     </button>
                   </nav>
                 </nav>

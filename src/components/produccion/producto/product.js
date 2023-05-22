@@ -113,7 +113,7 @@ export class Productoss extends React.Component {
             className="rounded-3  shadow "
             style={{
               width: "100%",
-              height: "33rem",
+              height: "42rem",
               display: "grid",
               placeItems: "center",
               backgroundColor: "white",

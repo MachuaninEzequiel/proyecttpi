@@ -1,4 +1,5 @@
 import React from "react";
+import "./lineaEstilos.css";
 
 import LineaProveedores from "./LineaProveedores";
 import { Search } from "@mui/icons-material";
@@ -19,7 +20,7 @@ const ListaProveedores = () => {
           className="rounded-3 shadow "
           style={{
             width: "79rem",
-            height: "45rem",
+            height: "40rem",
             display: "grid",
             placeItems: "center",
             backgroundColor: "white",
@@ -37,7 +38,7 @@ const ListaProveedores = () => {
               class="overflow-auto"
               style={{
                 width: "77rem",
-                height: "40rem",
+                height: "35rem",
                 display: "grid",
                 placeItems: "center",
                 backgroundColor: "white",
@@ -50,7 +51,7 @@ const ListaProveedores = () => {
                 <caption class="mb-3">
                   <h2>Lista de Proveedores</h2>
                 </caption>
-                <thead class="table-light sticky-top ">
+                <thead class="table-light " className="pegado">
                   <tr>
                     <th scope="col">
                       <h5>#</h5>
@@ -489,7 +490,7 @@ const ListaProveedores = () => {
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="eliminarclienteModalLabel">
-                Eliminar cliente
+                Eliminar Proveedor
               </h5>
               <button
                 type="button"
@@ -500,17 +501,24 @@ const ListaProveedores = () => {
             </div>
             <div class="modal-body">
               <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">
-                    Destinatario:
-                  </label>
-                  <input type="text" class="form-control" id="recipient-name" />
+                <div
+                  class="mb-0"
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <img
+                    src="https://media.istockphoto.com/id/1352235920/es/vector/icono-de-signo-de-exclamaci%C3%B3n-icono-de-advertencia-rojo-signo-triangular-rojo-vectorial-con.jpg?s=612x612&w=0&k=20&c=uQ5jcx1qr4QWHdl_b-duGfmbqrKc4DpqNsMAJ1OkLgE="
+                    alt="Logo"
+                    style={{
+                      width: "150px",
+                      height: "auto",
+                    }}
+                  />
                 </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">
-                    Mensaje:
-                  </label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                <div
+                  class="mb-3"
+                  style={{ display: "flex", justifyContent: "center" }}
+                >
+                  <h4>Desea eliminar este proveedor?</h4>
                 </div>
               </form>
             </div>
@@ -522,8 +530,13 @@ const ListaProveedores = () => {
               >
                 Cerrar
               </button>
-              <button type="button" class="btn btn-primary">
-                Enviar mensaje
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+                id="liveAlertBtn"
+              >
+                Eliminar
               </button>
             </div>
           </div>
