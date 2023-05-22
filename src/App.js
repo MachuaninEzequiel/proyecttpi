@@ -31,6 +31,9 @@ import {
   ProduccionProducto,
   RegistrarMP,
   RegistrarProd,
+  AdminDeudores,
+  AdminStock,
+  AdminCompras,
 } from "./pages";
 
 const App = () => {
@@ -48,6 +51,9 @@ const App = () => {
             <Route element={<RegistrarProd />} path="RegProd" />
             <Route element={<ProduccionMP />} path="ProduccionMP" />
             <Route element={<ProduccionProducto />} path="ProduccionProd" />
+            <Route element={<AdminDeudores />} path="Deudores" />
+            <Route element={<AdminStock />} path="Stock" />
+            <Route element={<AdminCompras />} path="Compras" />
           </Routes>
         </Layout>
       </AdminProvider>

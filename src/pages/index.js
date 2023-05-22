@@ -7,3 +7,6 @@ export { default as ProduccionMP } from "./ProduccionMP";
 export { default as ProduccionProducto } from "./ProduccionProducto";
 export { default as RegistrarMP } from "./RegistrarMP";
 export { default as RegistrarProd } from "./RegistrarProd";
+export { default as AdminDeudores } from "./AdminDeudores";
+export { default as AdminStock } from "./AdminStock";
+export { default as AdminCompras } from "./AdminCompras";

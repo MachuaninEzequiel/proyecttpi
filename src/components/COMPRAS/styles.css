@@ -1,0 +1,75 @@
+.modalHeader {
+  padding: 16px;
+  background: linear-gradient(148deg, rgb(1, 110, 16) 0%, rgb(3, 145, 17) 100%);
+  border-radius: 12px;
+}
+
+.enLinea {
+  font-weight: 600;
+  padding: 8px;
+  display: inline;
+  color: white;
+}
+
+.botonCerrar {
+  font-weight: 600;
+  font-size: larger;
+
+  color: aliceblue;
+  background-color: rgba(43, 102, 154, 0);
+  border: none;
+
+  display: inline-block;
+  margin: 0;
+  margin-left: 160px;
+}
+
+.modalContenedora {
+  border-radius: 6px;
+}
+
+.modalContenedora__cuerpo {
+  background-color: rgb(255, 255, 255);
+  border-radius: 18px;
+}
+
+.modalFooter {
+  margin: 8px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 18px;
+  display: grid;
+  align-items: center;
+}
+
+.boton-pie {
+  background: linear-gradient(148deg, rgb(1, 110, 16) 0%, rgb(3, 145, 17) 100%);
+
+  font-weight: 600;
+  color: aliceblue;
+  border: none;
+  padding: 4px;
+  border-radius: 12px;
+}
+
+.boton-pie:hover {
+  color: rgb(255, 255, 255);
+
+  font-weight: 600;
+
+  box-shadow: 0px 5px 32px black;
+  border: none;
+  padding: 4px;
+  border-radius: 0px;
+
+  transition: all, 0.3s;
+}
+
+h4 {
+  color: rgb(34, 116, 88);
+  font-weight: 500;
+}
+
+.div-span__texto {
+  font-size: 20px;
+  color: rgb(83, 83, 83);
+}

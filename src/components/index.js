@@ -20,3 +20,8 @@ export { default as IngrosoMateriaP } from "./produccion/materiaPrima/IngresoMP"
 export { default as IngrosoProducto } from "./produccion/producto/IngresoProduct";
 export { default as Productos } from "./produccion/producto/Producto";
 export { default as NavBarPorduccion } from "./navbar/Navbar33";
+
+//Lauti y Ariano
+export { default as ListaDeudores } from "./DEUDORES/ListaDeudores";
+export { default as ListaStock } from "./stock/ListaStock";
+export { default as ListaCompras } from "./COMPRAS/ListaCompras";
