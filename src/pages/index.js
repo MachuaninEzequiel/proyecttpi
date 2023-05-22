@@ -3,3 +3,7 @@ export { default as VentasProv } from "./VentasProv";
 export { default as RegistrarCliente } from "./RegistrarCliente";
 export { default as RegistrarProveedor } from "./RegistrarProveedor";
 export { default as LoginHome } from "./LoginHome";
+export { default as ProduccionMP } from "./ProduccionMP";
+export { default as ProduccionProducto } from "./ProduccionProducto";
+export { default as RegistrarMP } from "./RegistrarMP";
+export { default as RegistrarProd } from "./RegistrarProd";

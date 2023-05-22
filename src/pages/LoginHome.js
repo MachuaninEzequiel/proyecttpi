@@ -72,21 +72,32 @@ const LoginHome = () => {
       localStorage.setItem("username", e.target[0].value);
       localStorage.setItem("isAdmin", JSON.stringify(true));
       adminContext?.setIsAdmin(true);
-      navigate("Clientes");
+      //navigate("Clientes");
     }
     //raro
     if (validateCredentials(e.target)) {
       localStorage.setItem("username", e.target[0].value);
       localStorage.setItem("isProd", JSON.stringify(true));
       adminContext?.setIsProd(true);
-      navigate("Proveedores");
+      //navigate("ProduccionMP");
     }
-
     if (validateCredentials(e.target)) {
       localStorage.setItem("username", e.target[0].value);
       localStorage.setItem("isVentas", JSON.stringify(true));
       adminContext?.setIsVentas(true);
+      //navigate("Proveedores");
+    }
+
+    const usuario = e.target[0].value;
+    //const Produccion = JSON.parse(localStorage.getItem("prod"));
+    //const Ventas = JSON.parse(localStorage.getItem("ventas"));
+
+    if (usuario === "test") {
       navigate("RegProv");
+    } else if (usuario === "prod") {
+      navigate("ProduccionMP");
+    } else if (usuario === "ventas") {
+      navigate("Clientes");
     }
   };
 

@@ -13,3 +13,10 @@ export { default as Navbar } from "./navbar/Navbar";
 export { default as Login } from "./login/Login";
 export { default as Login1 } from "./login/Login1";
 export { default as BotonD } from "./botondesplegable/BotonD";
+
+//Andrea
+export { default as MateriaPrima } from "./produccion/materiaPrima/MateriaPrima0";
+export { default as IngrosoMateriaP } from "./produccion/materiaPrima/IngresoMP";
+export { default as IngrosoProducto } from "./produccion/producto/IngresoProduct";
+export { default as Productos } from "./produccion/producto/Producto";
+export { default as NavBarPorduccion } from "./navbar/Navbar33";

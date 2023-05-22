@@ -27,6 +27,10 @@ import {
   RegistrarCliente,
   RegistrarProveedor,
   LoginHome,
+  ProduccionMP,
+  ProduccionProducto,
+  RegistrarMP,
+  RegistrarProd,
 } from "./pages";
 
 const App = () => {
@@ -40,6 +44,10 @@ const App = () => {
             <Route element={<VentasProv />} path="Proveedores" />
             <Route element={<RegistrarCliente />} path="RegCliente" />
             <Route element={<RegistrarProveedor />} path="RegProv" />
+            <Route element={<RegistrarMP />} path="RegMP" />
+            <Route element={<RegistrarProd />} path="RegProd" />
+            <Route element={<ProduccionMP />} path="ProduccionMP" />
+            <Route element={<ProduccionProducto />} path="ProduccionProd" />
           </Routes>
         </Layout>
       </AdminProvider>
