@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       {username === "prod" ? <Navbar33 /> : null}
-      {username === "ventas" ? <Navbar3 /> : null}
+      {username === "ventas" ? <Navbar1 /> : null}
       {username === "test" ? <Navbar4 /> : null}
 
       {children}

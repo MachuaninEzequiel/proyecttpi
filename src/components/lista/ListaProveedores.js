@@ -18,7 +18,7 @@ const ListaProveedores = () => {
         <div
           className="rounded-3 shadow "
           style={{
-            width: "82rem",
+            width: "79rem",
             height: "45rem",
             display: "grid",
             placeItems: "center",
@@ -36,7 +36,7 @@ const ListaProveedores = () => {
               className="rounded-3 py-5 shadow "
               class="overflow-auto"
               style={{
-                width: "80rem",
+                width: "77rem",
                 height: "40rem",
                 display: "grid",
                 placeItems: "center",
@@ -45,7 +45,7 @@ const ListaProveedores = () => {
             >
               <table
                 class="table caption-top table-hover "
-                style={{ width: "74rem", placeItems: "center" }}
+                style={{ width: "71rem", placeItems: "center" }}
               >
                 <caption class="mb-3">
                   <h2>Lista de Proveedores</h2>
@@ -57,178 +57,28 @@ const ListaProveedores = () => {
                     </th>
                     <th></th>
                     {/* Los inputs con icono */}
-                    <th scope="col" style={{ width: "9rem" }} class="ml-2">
-                      <div class="input-group ">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Nombre"
-                          aria-label="Nombre"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Nombre</h5>
                     </th>
                     <th></th>
-                    <th scope="col" style={{ width: "10rem" }} class="ml-2">
-                      <div class="input-group ">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="CUIL"
-                          aria-label="CUIL"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Cuil</h5>
                     </th>
                     <th></th>
-                    <th scope="col">
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Correo"
-                          aria-label="Correo"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Correo</h5>
                     </th>
                     <th></th>
-                    <th scope="col">
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Direccion"
-                          aria-label="Direccion"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Direccion</h5>
                     </th>
                     <th></th>
-                    <th scope="col">
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Telefono"
-                          aria-label="Telefono"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Telefono</h5>
                     </th>
                     <th></th>
-                    <th scope="col" style={{ width: "10rem" }} class="ml-2">
-                      <div class="input-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Cod Postal"
-                          aria-label="Cod Postal"
-                          aria-describedby="button-addon2"
-                        />
-
-                        <button
-                          class="btn btn-outline-secondary"
-                          type="button"
-                          id="button-addon2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                          </svg>
-                        </button>
-                      </div>
+                    <th scope="col" className="centrado">
+                      <h5>Cod Postal</h5>
                     </th>
 
                     <th></th>

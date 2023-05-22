@@ -1,4 +1,8 @@
 import React from "react";
+import "../../App.css";
+import "./Navbar.css";
+const logoImage = require("./logoR.png");
+const hamburguesaMenu = require("./hamb.png");
 
 const Navbar1 = () => {
   function cerrarsesion() {
@@ -9,20 +13,25 @@ const Navbar1 = () => {
 
   return (
     <>
-      <nav class="navbar  ">
+      <nav class="navbar sticky-top fixed-top gradient__bg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="8">
-            Reciplas
+          <a class="navbar-brand" href="#">
+            <img
+              src={logoImage}
+              alt="Logo"
+              style={{ width: "100px", height: "auto" }}
+            />
           </a>
           <button
-            class="navbar-toggler"
+            className="hamb__button"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src={hamburguesaMenu} className="hamb__icon"></img>
           </button>
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -30,9 +39,9 @@ const Navbar1 = () => {
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Area de Ventas
-              </h3>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Menu
+              </h5>
               <button
                 type="button"
                 class="btn-close"
@@ -40,24 +49,60 @@ const Navbar1 = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="Proveedores">
+            <div class="row">
+              <nav id="navbar-example3">
+                <nav class="nav nav-pills flex-column">
+                  <h3
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link"
+                    href="#item-1"
+                  >
                     Proveedores
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Clientes">
+                  </h3>
+                  <nav class="nav nav-pills flex-column">
+                    <a
+                      style={{ color: "#9b9a9a" }}
+                      class="nav-link ms-3 my-1"
+                      href="Proveedores"
+                    >
+                      Lista de Proveedores
+                    </a>
+                    <a
+                      style={{ color: "#9b9a9a" }}
+                      class="nav-link ms-3 my-1"
+                      href="RegProv"
+                    >
+                      Registrar nuevo Proveedor
+                    </a>
+                  </nav>
+                  <h3
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link"
+                    href="#item-3"
+                  >
                     Clientes
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <button onClick={cerrarsesion}> Cerrar Sesion</button>
-                  </a>
-                </li>
-              </ul>
+                  </h3>
+                  <nav class="nav nav-pills flex-column">
+                    <a
+                      style={{ color: "#9b9a9a" }}
+                      class="nav-link ms-3 my-1"
+                      href="Clientes"
+                    >
+                      Lista de Clientes
+                    </a>
+                    <a
+                      style={{ color: "#9b9a9a" }}
+                      class="nav-link ms-3 my-1"
+                      href="RegCliente"
+                    >
+                      Registrar nuevo Cliente
+                    </a>
+                    <button onClick={cerrarsesion}>
+                      <a href="/">cerrarsesion</a>
+                    </button>
+                  </nav>
+                </nav>
+              </nav>
             </div>
           </div>
         </div>
