@@ -1,25 +1,33 @@
-import cliente from "./cliente";
+import React from "react";
+import { BotonCheckBox } from "../botonCheckbox";
+
+import proveedores from "./proveedores";
 import "./lineaEstilos.css";
 
-const LineaCliente = () => {
+const LineaProvAdmin = () => {
   return (
     <>
       <tbody>
-        {cliente.map((user) => (
+        {proveedores.map((user) => (
           <tr>
-            <th scope="row" className="centrado">
-              {user["#"]}
+            <th scope="row">
+              <BotonCheckBox />
             </th>
+            <td></td>
+            <th scope="row">{user["#"]}</th>
             <td></td>
             <td className="centrado">{user.nombre}</td>
             <td></td>
-            <td className="centrado">{user.apellido}</td>
+
+            <td className="centrado">{user.cuil}</td>
             <td></td>
             <td className="centrado">{user.correo}</td>
             <td></td>
+            <td className="centrado">{user.direccion}</td>
+            <td></td>
             <td className="centrado">{user.telefono}</td>
             <td></td>
-            <td className="centrado">{user.direccion}</td>
+            <td className="centrado">{user.codigopostal}</td>
             <td></td>
             <td className="centrado">
               <svg
@@ -78,4 +86,4 @@ const LineaCliente = () => {
   );
 };
 
-export default LineaCliente;
+export default LineaProvAdmin;

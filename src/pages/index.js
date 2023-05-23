@@ -10,3 +10,5 @@ export { default as RegistrarProd } from "./RegistrarProd";
 export { default as AdminDeudores } from "./AdminDeudores";
 export { default as AdminStock } from "./AdminStock";
 export { default as AdminCompras } from "./AdminCompras";
+export { default as AdminListProv } from "./AdminListProv";
+export { default as AdminListCli } from "./AdminListCli";

@@ -34,6 +34,8 @@ import {
   AdminDeudores,
   AdminStock,
   AdminCompras,
+  AdminListProv,
+  AdminListCli,
 } from "./pages";
 
 const App = () => {
@@ -54,6 +56,8 @@ const App = () => {
             <Route element={<AdminDeudores />} path="Deudores" />
             <Route element={<AdminStock />} path="Stock" />
             <Route element={<AdminCompras />} path="Compras" />
+            <Route element={<AdminListProv />} path="AdmProv" />
+            <Route element={<AdminListCli />} path="AdmCli" />
           </Routes>
         </Layout>
       </AdminProvider>

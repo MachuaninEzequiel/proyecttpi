@@ -1,15 +1,19 @@
 import cliente from "./cliente";
 import "./lineaEstilos.css";
 
-const LineaCliente = () => {
+import { BotonCheckBox } from "../botonCheckbox";
+
+const LineaCliAdm = () => {
   return (
     <>
       <tbody>
         {cliente.map((user) => (
           <tr>
-            <th scope="row" className="centrado">
-              {user["#"]}
+            <th scope="row">
+              <BotonCheckBox />
             </th>
+            <td></td>
+            <th scope="row">{user["#"]}</th>
             <td></td>
             <td className="centrado">{user.nombre}</td>
             <td></td>
@@ -78,4 +82,4 @@ const LineaCliente = () => {
   );
 };
 
-export default LineaCliente;
+export default LineaCliAdm;
