@@ -54,27 +54,27 @@ const ListaStock = () => {
                 </caption>
                 <thead class="table-light " className="pegado">
                   <tr>
-                    <th scope="col">
+                    <th scope="col" style={{ width: "6rem" }} class="ml-2">
                       <h5>
                         <b>#</b>
                       </h5>
                     </th>
 
-                    <th scope="col" style={{ width: "12rem" }} class="ml-2">
+                    <th scope="col" style={{ width: "6rem" }} class="ml-2">
                       {" "}
                       Id
                     </th>
                     {/* Los inputs con icono */}
-                    <th scope="col" style={{ width: "12rem" }} class="ml-2">
+                    <th scope="col" style={{ width: "6rem" }} class="ml-2">
                       Cantidad
                     </th>
-                    <th scope="col" style={{ width: "12rem" }} class="ml-2">
+                    <th scope="col" style={{ width: "9rem" }} class="ml-2">
                       Cantidad Minima
                     </th>
                     <th
                       className="centrado"
                       scope="col"
-                      style={{ width: "12rem" }}
+                      style={{ width: "6rem" }}
                       class="ml-2"
                     >
                       Tipo
@@ -82,7 +82,7 @@ const ListaStock = () => {
                     <th
                       className="centrado"
                       scope="col"
-                      style={{ width: "24rem" }}
+                      style={{ width: "12rem" }}
                       class="ml-2"
                     >
                       Descripcion

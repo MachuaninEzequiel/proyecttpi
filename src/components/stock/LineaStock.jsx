@@ -12,9 +12,8 @@ const LineaStock = () => {
             </td>
             <td> {usuario.id} </td>
             <td>{usuario.cantidad}</td>
-
             <td className="centrado">{usuario.cantidad_minima}</td>
-            <td className="centrado"> {usuario.tipo}</td>
+            <td> {usuario.tipo}</td>
             <td> {usuario.descripcion}</td>
           </tr>
         );
