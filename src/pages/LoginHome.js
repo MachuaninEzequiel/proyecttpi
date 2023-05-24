@@ -29,19 +29,31 @@ const ventasCredentials = {
   isVenta: false,
 };
 
+const comprasCredentials = {
+  firstName: "compras",
+  lastName: "compras",
+  email: "compras@compras",
+  password: "compras",
+  isVenta: false,
+};
+
 function validateCredentials(credentials) {
   return (
     (credentials[0].value === normalCredentials.firstName ||
       credentials[0].value === produccionCredentials.firstName ||
+      /* */ credentials[0].value === comprasCredentials.firstName ||
       credentials[0].value === ventasCredentials.firstName) &&
     (credentials[1].value === normalCredentials.lastName ||
       credentials[1].value === produccionCredentials.lastName ||
+      /* */ credentials[1].value === comprasCredentials.lastName ||
       credentials[1].value === ventasCredentials.lastName) &&
     (credentials[2].value === normalCredentials.email ||
       credentials[2].value === produccionCredentials.email ||
+      /* */ credentials[2].value === comprasCredentials.email ||
       credentials[2].value === ventasCredentials.email) &&
     (credentials[3].value === produccionCredentials.password ||
       credentials[3].value === normalCredentials.password ||
+      /* */ credentials[3].value === comprasCredentials.password ||
       credentials[3].value === ventasCredentials.password)
   );
 }
@@ -98,6 +110,8 @@ const LoginHome = () => {
       navigate("ProduccionMP");
     } else if (usuario === "ventas") {
       navigate("Clientes");
+    } else if (usuario === "compras") {
+      navigate("AdmMP");
     }
   };
 

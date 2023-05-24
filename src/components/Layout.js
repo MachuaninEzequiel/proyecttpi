@@ -4,6 +4,7 @@ import Navbar1 from "./navbar/Navbar1";
 import Navbar2 from "./navbar/Navbar2";
 import Navbar3 from "./navbar/Navbar3";
 import Navbar4 from "./navbar/Navbar4";
+import Navbar5 from "./navbar/Navbar5";
 import Navbar33 from "./navbar/Navbar33";
 
 const Layout = ({ children }) => {
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
       {username === "prod" ? <Navbar33 /> : null}
       {username === "ventas" ? <Navbar4 /> : null}
       {username === "test" ? <Navbar2 /> : null}
+      {username === "compras" ? <Navbar5 /> : null}
 
       {children}
     </div>

@@ -9,6 +9,7 @@ export { default as Navbar3 } from "./navbar/Navbar3";
 export { default as Navbar4 } from "./navbar/Navbar4";
 export { default as Navbar2 } from "./navbar/Navbar2";
 export { default as Navbar1 } from "./navbar/Navbar1";
+export { default as Navbar5 } from "./navbar/Navbar5";
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Login } from "./login/Login";
 export { default as Login1 } from "./login/Login1";
