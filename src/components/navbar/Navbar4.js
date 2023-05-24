@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import "./Navbar.css";
+import { Button } from "reactstrap";
 const logoImage = require("./logoR.png");
 const hamburguesaMenu = require("./hamb.png");
 
@@ -96,6 +97,15 @@ export function Navbar4() {
                   >
                     Registrar Nuevo Proveedor
                   </a>
+                </nav>
+                <nav class="nav nav-pills flex-column">
+                  <div style={{ marginRight: "20px" }}>
+                    <Button onClick={cerrarsesion} color="success">
+                      <a class="my-link" href="/">
+                        CERRAR SESION
+                      </a>
+                    </Button>
+                  </div>
                 </nav>
               </nav>
             </nav>

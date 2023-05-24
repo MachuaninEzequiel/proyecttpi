@@ -1,0 +1,178 @@
+const usuarios = [
+  {
+    id_usuario: "0",
+    nombre_usuario: "Roberto",
+    apellido_usuario: "Benitez",
+    tipo_usuario: "Administracion",
+    telefono: "3794982743",
+    email: "btzRob2@gmail.com",
+    contraseña: "omhgiuo9H7hsj",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "1",
+    nombre_usuario: "Carla",
+    apellido_usuario: "Fernandez",
+    tipo_usuario: "Ventas",
+    telefono: "3794886655",
+    email: "carlfrz12@gmail.com",
+    contraseña: "okjbxt74JyBB",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "2",
+    nombre_usuario: "Paula",
+    apellido_usuario: "Canteros",
+    tipo_usuario: "Compras",
+    telefono: "3794755421",
+    email: "@gmail.com",
+    contraseña: "CKDikkdy9123lxjx",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "3",
+    nombre_usuario: "Alexis",
+    apellido_usuario: "Altamirano",
+    tipo_usuario: "Produccion",
+    telefono: "3794332142",
+    email: "altalex123@gmail.com",
+    contraseña: "uHjSLt72SD66s",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "4",
+    nombre_usuario: "Ayelen",
+    apellido_usuario: "Benitez",
+    tipo_usuario: "Produccion",
+    telefono: "3794443372",
+    email: "ayzbt65@gmail.com",
+    contraseña: "azPokgixan76HxS",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "5",
+    nombre_usuario: "Maira",
+    apellido_usuario: "Luque",
+    tipo_usuario: "Ventas",
+    telefono: "3794765621",
+    email: "loqma54@gmail.com",
+    contraseña: "uHksk9oqcVs",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "6",
+    nombre_usuario: "Francisco",
+    apellido_usuario: "Alfonzo",
+    tipo_usuario: "Administracion",
+    telefono: "3794215468",
+    email: "frALf78@gmail.com",
+    contraseña: "oMnq456Xs0",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "7",
+    nombre_usuario: "Fabricio",
+    apellido_usuario: "Marconi",
+    tipo_usuario: "Ventas",
+    telefono: "3794019642",
+    email: "kamoT014@gmail.com",
+    contraseña: "kdXPvX45",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "8",
+    nombre_usuario: "Enzo",
+    apellido_usuario: "Campos",
+    tipo_usuario: "Produccion",
+    telefono: "3794321274",
+    email: "enzos21@gmail.com",
+    contraseña: "plapqxs2211",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "9",
+    nombre_usuario: "Rodrigo",
+    apellido_usuario: "Quiroz",
+    tipo_usuario: "Ventas",
+    telefono: "3794982312",
+    email: "rsMar89@gmail.com",
+    contraseña: "pwpoe998788ACSy87",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "10",
+    nombre_usuario: "Lautaro",
+    apellido_usuario: "Lopez",
+    tipo_usuario: "Ventas",
+    telefono: "3794092134",
+    email: "szLP78@gmail.com",
+    contraseña: "98sSd7F76Sqamx",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "11",
+    nombre_usuario: "Ivanna",
+    apellido_usuario: "Rodriguez",
+    tipo_usuario: "Compras",
+    telefono: "3794",
+    email: "rodIVnds12@gmail.com",
+    contraseña: "KsaYY0122UzSU",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "12",
+    nombre_usuario: "Ivan",
+    apellido_usuario: "Herrera",
+    tipo_usuario: "Produccion",
+    telefono: "3794090921",
+    email: "@gmail.com",
+    contraseña: "91k29r7HDXS0",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "13",
+    nombre_usuario: "Maria",
+    apellido_usuario: "Lopez",
+    tipo_usuario: "Produccion",
+    telefono: "3794828319",
+    email: "mariLp312@gmail.com",
+    contraseña: "psiqnci0192OIISj",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "14",
+    nombre_usuario: "Alberto",
+    apellido_usuario: "Martin",
+    tipo_usuario: "Ventas",
+    telefono: "3794384784",
+    email: "aMts@gmail.com",
+    contraseña: "Hkujsi720",
+    fecha_registro: "10/11/22",
+  },
+
+  {
+    id_usuario: "15",
+    nombre_usuario: "Carlos",
+    apellido_usuario: "Almiron",
+    tipo_usuario: "Ventas",
+    telefono: "3794",
+    email: "carlArm@gmail.com",
+    contraseña: "jdi9s9200d",
+    fecha_registro: "10/11/22",
+  },
+];
+export default usuarios;

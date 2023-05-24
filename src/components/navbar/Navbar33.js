@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import "./Navbar.css";
+import { Button } from "reactstrap";
 const logoImage = require("./logoR.png");
 const hamburguesaMenu = require("./hamb.png");
 
@@ -108,10 +109,19 @@ export function Navbar33() {
                   <a
                     style={{ color: "#9b9a9a" }}
                     class="nav-link ms-3 my-1"
-                    href="RegProd"
+                    href="ProdPedidos"
                   >
                     Lista de Pedidos
                   </a>
+                </nav>
+                <nav class="nav nav-pills flex-column">
+                  <div style={{ margin: "20px" }}>
+                    <Button onClick={cerrarsesion} color="success">
+                      <a class="my-link" href="/">
+                        CERRAR SESION
+                      </a>
+                    </Button>
+                  </div>
                 </nav>
               </nav>
             </nav>

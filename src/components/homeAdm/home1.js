@@ -61,7 +61,9 @@ export function HomeA() {
                     className="rounded-3  shadow "
                   >
                     <button class="btn btn-success" type="button">
-                      Usuarios
+                      <a class="my-link" href="AdmUsuarios">
+                        Usuarios
+                      </a>
                     </button>
                   </div>
                   <div
