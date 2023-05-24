@@ -36,6 +36,8 @@ import {
   AdminCompras,
   AdminListProv,
   AdminListCli,
+  AdminHome,
+  AdminVentas,
 } from "./pages";
 
 const App = () => {
@@ -58,6 +60,8 @@ const App = () => {
             <Route element={<AdminCompras />} path="Compras" />
             <Route element={<AdminListProv />} path="AdmProv" />
             <Route element={<AdminListCli />} path="AdmCli" />
+            <Route element={<AdminHome />} path="AdmHome" />
+            <Route element={<AdminVentas />} path="AdmVentas" />
           </Routes>
         </Layout>
       </AdminProvider>

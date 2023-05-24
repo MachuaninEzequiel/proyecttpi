@@ -15,6 +15,8 @@ export { default as Login1 } from "./login/Login1";
 export { default as BotonD } from "./botondesplegable/BotonD";
 export { default as ListProvAdm } from "./lista/ListProvAdm";
 export { default as ListaCliAdm } from "./lista/ListaCliAdm";
+export { default as HomeAdmin } from "./homeAdm/home";
+export { default as ListaVentasAdm } from "./ventas/ListaVentasAdm";
 
 //Andrea
 export { default as MateriaPrima } from "./produccion/materiaPrima/MateriaPrima0";

@@ -1,6 +1,7 @@
 import React from "react";
 import "./lineaEstilos.css";
 import { Imprimir } from "../modalBoton";
+import { Button } from "reactstrap";
 
 import LineaProvAdmin from "./LineaProvAdm";
 import { Search } from "@mui/icons-material";
@@ -51,6 +52,16 @@ const ListProvAdm = () => {
               >
                 <caption class="mb-3">
                   <h2>Lista de Proveedores</h2>
+                  <div className="procBotonos">
+                    <div style={{ marginRight: "20px" }}>
+                      <Button color="success">
+                        <a class="my-link" href="RegProv">
+                          {" "}
+                          New{" "}
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
                 </caption>
                 <thead class="table-light " className="pegado">
                   <tr>

@@ -5,6 +5,12 @@ const logoImage = require("./logoR.png");
 const hamburguesaMenu = require("./hamb.png");
 
 export function Navbar33() {
+  function cerrarsesion() {
+    localStorage.removeItem("username");
+    localStorage.removeItem("isAdmin");
+    localStorage.removeItem("isProd");
+  }
+
   return (
     <nav class="navbar sticky-top fixed-top gradient__bg">
       <div class="container-fluid">
@@ -89,6 +95,22 @@ export function Navbar33() {
                     href="RegProd"
                   >
                     Ingresar Producto
+                  </a>
+                </nav>
+                <h3
+                  style={{ color: "#9b9a9a" }}
+                  class="nav-link"
+                  href="#item-3"
+                >
+                  Pedidos
+                </h3>
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link ms-3 my-1"
+                    href="RegProd"
+                  >
+                    Lista de Pedidos
                   </a>
                 </nav>
               </nav>

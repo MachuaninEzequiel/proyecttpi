@@ -1,6 +1,10 @@
 import React from "react";
+import "../../App.css";
+import "./Navbar.css";
+const logoImage = require("./logoR.png");
+const hamburguesaMenu = require("./hamb.png");
 
-const Navbar4 = () => {
+export function Navbar4() {
   function cerrarsesion() {
     localStorage.removeItem("username");
     localStorage.removeItem("isAdmin");
@@ -8,62 +12,98 @@ const Navbar4 = () => {
   }
 
   return (
-    <>
-      <nav class="navbar  ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="8">
-            Reciplas
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Area de Ventas
-              </h3>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="Proveedores">
-                    prueva4
+    <nav class="navbar sticky-top fixed-top gradient__bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src={logoImage}
+            alt="Logo"
+            style={{ width: "100px", height: "auto" }}
+          />
+        </a>
+        <button
+          className="hamb__button"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <img src={hamburguesaMenu} className="hamb__icon"></img>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Menu
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="row">
+            <nav id="navbar-example3">
+              <nav class="nav nav-pills flex-column">
+                <h3
+                  style={{ color: "#9b9a9a" }}
+                  class="nav-link"
+                  href="#item-1"
+                >
+                  Clientes
+                </h3>
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link ms-3 my-1"
+                    href="Clientes"
+                  >
+                    Lista de Clientes
                   </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Clientes">
-                    Clientes
+                  <a
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link ms-3 my-1"
+                    href="RegCliente"
+                  >
+                    Registrar Nuevo Cliente
                   </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/">
-                    <button onClick={cerrarsesion}> Cerrar Sesion</button>
+                </nav>
+                <h3
+                  style={{ color: "#9b9a9a" }}
+                  class="nav-link"
+                  href="#item-3"
+                >
+                  Proveedores
+                </h3>
+                <nav class="nav nav-pills flex-column">
+                  <a
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link ms-3 my-1"
+                    href="Proveedores"
+                  >
+                    Lista de Proveedores
                   </a>
-                </li>
-              </ul>
-            </div>
+                  <a
+                    style={{ color: "#9b9a9a" }}
+                    class="nav-link ms-3 my-1"
+                    href="RegProv"
+                  >
+                    Registrar Nuevo Proveedor
+                  </a>
+                </nav>
+              </nav>
+            </nav>
           </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
-};
+}
 
 export default Navbar4;

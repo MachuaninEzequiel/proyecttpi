@@ -1,6 +1,7 @@
 import React from "react";
 import "./lineaEstilos.css";
 import { Imprimir } from "../modalBoton";
+import { Button } from "reactstrap";
 
 import { BotonD } from "..";
 
@@ -53,6 +54,16 @@ const ListaCliAdm = () => {
               >
                 <caption class="mb-3 mt-2 ">
                   <h2>Lista de Clientes</h2>
+                  <div className="procBotonos">
+                    <div style={{ marginRight: "20px" }}>
+                      <Button color="success">
+                        <a class="my-link" href="RegCliente">
+                          {" "}
+                          New{" "}
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
                 </caption>
 
                 <thead class="table-light " className="pegado">

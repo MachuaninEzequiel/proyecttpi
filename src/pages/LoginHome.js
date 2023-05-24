@@ -93,7 +93,7 @@ const LoginHome = () => {
     //const Ventas = JSON.parse(localStorage.getItem("ventas"));
 
     if (usuario === "test") {
-      navigate("RegProv");
+      navigate("AdmHome");
     } else if (usuario === "prod") {
       navigate("ProduccionMP");
     } else if (usuario === "ventas") {

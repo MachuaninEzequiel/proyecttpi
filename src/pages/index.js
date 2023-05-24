@@ -12,3 +12,5 @@ export { default as AdminStock } from "./AdminStock";
 export { default as AdminCompras } from "./AdminCompras";
 export { default as AdminListProv } from "./AdminListProv";
 export { default as AdminListCli } from "./AdminListCli";
+export { default as AdminHome } from "./AdminHome";
+export { default as AdminVentas } from "./AdminVentas";
