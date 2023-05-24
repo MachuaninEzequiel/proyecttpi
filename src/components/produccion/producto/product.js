@@ -436,7 +436,7 @@ export class Productoss extends React.Component {
           <Modal size="lg" className="Modal" isOpen={this.state.modalReporte}>
             <ModalHeader>
               <div>
-                <h3>Reportes de Materia prima</h3>
+                <h3>Reportes de Productos</h3>
               </div>
             </ModalHeader>
             <ModalBody>
