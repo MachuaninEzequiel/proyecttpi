@@ -47,6 +47,7 @@ export class ListaUsuario extends React.Component {
       },
     });
   };
+
   mostartModalReporte = () => {
     this.setState({ modalReporte: true });
   };
@@ -165,6 +166,11 @@ export class ListaUsuario extends React.Component {
                   <h2>Usuarios</h2>
                 </div>
                 <div className="procBotonos">
+                  <div style={{ marginRight: "20px" }}>
+                    <Button onClick={() => this.mostrarModalFiltrar()}>
+                      <FaFilter />
+                    </Button>
+                  </div>
                   <div style={{ marginRight: "50px" }}>
                     <Button color="success">
                       <a class="my-link" href="AdmRegUsuario">
@@ -431,6 +437,79 @@ export class ListaUsuario extends React.Component {
             <ModalFooter>
               <Button onClick={() => this.ocultarModalInfo()} color="danger">
                 Cancelar
+              </Button>
+            </ModalFooter>
+          </Modal>
+          <Modal isOpen={this.state.modalFiltrar}>
+            <ModalHeader>
+              <div>
+                <h3>Filter</h3>
+              </div>
+            </ModalHeader>
+            <ModalBody>
+              <div className="ID">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categoria
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        id
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Nombre y Apellido
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Area
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Telefono
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Correo
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Alta
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="ID">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+              </div>
+            </ModalBody>
+            <ModalFooter>
+              <Button
+                onClick={() => this.mostrarModalFiltrar()}
+                color="primary"
+              >
+                Buscar
+              </Button>
+              <Button onClick={() => this.ocultarModalFiltrar()} color="danger">
+                salir
               </Button>
             </ModalFooter>
           </Modal>
