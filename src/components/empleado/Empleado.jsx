@@ -125,23 +125,26 @@ const Empleado = () => {
                 <option selected>Prefiero no decirlo</option>
               </select>
               <br />
-              <label for="Contraseña" className="form-label">
-                Contraseña
+              <label for="DNI" className="form-label">
+                Codigo Postal
               </label>
               <input
-                type="password"
+                type="Number"
                 className="form-control imput"
-                id="contraseña"
+                id="codpostal"
               />
               <br />
-              <label for="confContraseña" className="form-label">
-                Confirmar Contraseña
+              <label for="inputState" className="form-label"></label>
+              <label for="inputGenero" className="form-label">
+                Razon Social
               </label>
-              <input
-                type="password"
-                className="form-control imput"
-                id="confcontraseña"
-              />
+              <select id="inputState" className="form-select imput">
+                <option>...</option>
+                <option selected>Soltero/a</option>
+                <option selected>Casado/a</option>
+                <option selected>Prefiero no decirlo</option>
+              </select>
+              <br />
               <br />
               <br />
               <button type="submit" className="btn btn-primary imput">

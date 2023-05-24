@@ -147,43 +147,43 @@ const ListProvAdm = () => {
                   <tbody>
                     <tr>
                       <th scope="row">ID:</th>
-                      <td>1234</td>
+                      <td className="derecha">129034</td>
                     </tr>
                     <tr>
                       <th>CUIL:</th>
-                      <td>1234</td>
+                      <td className="derecha">20-40895777-4</td>
                     </tr>
                     <tr>
                       <th>CORREO:</th>
-                      <td>1234</td>
+                      <td className="derecha">pepe@correo.com</td>
                     </tr>
                     <tr>
                       <th>PROVINCIA:</th>
-                      <td>1234</td>
+                      <td className="derecha">Chaco</td>
                     </tr>
                     <tr>
                       <th>CIUDAD:</th>
-                      <td>1234</td>
+                      <td className="derecha">Resistencia</td>
                     </tr>
                     <tr>
                       <th>DIRECCION:</th>
-                      <td>1234</td>
+                      <td className="derecha">Av. 9 de julio 3000</td>
                     </tr>
                     <tr>
                       <th>TELEFONO:</th>
-                      <td>1234</td>
+                      <td className="derecha">3624098670</td>
                     </tr>
                     <tr>
                       <th>CODIGO POSTAL:</th>
-                      <td>1234</td>
+                      <td className="derecha">3500</td>
                     </tr>
                     <tr>
                       <th>RAZON SOCIAL:</th>
-                      <td>1234</td>
+                      <td className="derecha">Soltero</td>
                     </tr>
                     <tr>
                       <th>FECHA DE NACIEMIENTO:</th>
-                      <td>1234</td>
+                      <td className="derecha">14/03/86</td>
                     </tr>
                   </tbody>
                 </table>
@@ -237,13 +237,6 @@ const ListProvAdm = () => {
                             aria-label="Nombre"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -258,13 +251,6 @@ const ListProvAdm = () => {
                             aria-label="Apellido"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -279,13 +265,6 @@ const ListProvAdm = () => {
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -296,17 +275,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Cuil"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -317,17 +289,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Correo"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -338,17 +303,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Provincia"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -359,17 +317,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Ciudad"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -380,17 +331,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Direccion"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -401,17 +345,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Telefono"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -422,17 +359,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Codigo Postal"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -443,17 +373,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Razon social"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -464,17 +387,10 @@ const ListProvAdm = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Fecha de nacimiento"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
