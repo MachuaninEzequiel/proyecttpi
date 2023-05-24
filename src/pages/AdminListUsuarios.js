@@ -1,10 +1,10 @@
 import React from "react";
-import { ListaUsuarios } from "../components";
+import { Usuariooo1 } from "../components";
 
 const AdminListUsuarios = () => {
   return (
     <>
-      <ListaUsuarios />
+      <Usuariooo1 />
     </>
   );
 };

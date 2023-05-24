@@ -1,5 +1,6 @@
 import React from "react";
 import "./lineaEstilos.css";
+import { FaFilter } from "react-icons/fa";
 
 import { BotonD } from "..";
 

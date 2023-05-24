@@ -25,9 +25,12 @@ export { default as IngrosoProducto } from "./produccion/producto/IngresoProduct
 export { default as Productos } from "./produccion/producto/Producto";
 export { default as NavBarPorduccion } from "./navbar/Navbar33";
 export { default as Pedido } from "./pedidos/Pedido0";
+export { default as AdmMatPrim } from "./produccion/materiaPrima/AdmMatPrim";
+export { default as AdmProd } from "./produccion/producto/AdmProd";
 
 //Lauti y Ariano
 export { default as ListaDeudores } from "./DEUDORES/ListaDeudores";
 export { default as ListaStock } from "./stock/ListaStock";
 export { default as ListaCompras } from "./COMPRAS/ListaCompras";
-export { default as ListaUsuarios } from "./usuarios/ListaUsuarios";
+export { default as RegUsuarios } from "./usuarios/Usuarios";
+export { default as Usuariooo1 } from "./usuarios/Usuarioo1";

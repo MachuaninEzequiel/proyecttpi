@@ -16,3 +16,6 @@ export { default as AdminHome } from "./AdminHome";
 export { default as AdminVentas } from "./AdminVentas";
 export { default as AdminListUsuarios } from "./AdminListUsuarios";
 export { default as ProduccionPedidos } from "./ProduccionPedidos";
+export { default as AdminRegUsuario } from "./AdminRegUsuario";
+export { default as AdmMateriaPrima } from "./AdmMateriaPrima";
+export { default as AdminProductos } from "./AdminProductos";

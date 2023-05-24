@@ -40,6 +40,9 @@ import {
   AdminVentas,
   AdminListUsuarios,
   ProduccionPedidos,
+  AdminRegUsuario,
+  AdmMateriaPrima,
+  AdminProductos,
 } from "./pages";
 
 const App = () => {
@@ -66,6 +69,9 @@ const App = () => {
             <Route element={<AdminVentas />} path="AdmVentas" />
             <Route element={<AdminListUsuarios />} path="AdmUsuarios" />
             <Route element={<ProduccionPedidos />} path="ProdPedidos" />
+            <Route element={<AdminRegUsuario />} path="AdmRegUsuario" />
+            <Route element={<AdmMateriaPrima />} path="AdmMP" />
+            <Route element={<AdminProductos />} path="AdmProductos" />
           </Routes>
         </Layout>
       </AdminProvider>

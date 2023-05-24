@@ -94,7 +94,7 @@ export function HomeA() {
                     className="rounded-3  shadow "
                   >
                     <button class="btn btn-success" type="button">
-                      <a class="my-link" href="ProduccionMP">
+                      <a class="my-link" href="AdmMP">
                         Materia Prima
                       </a>
                     </button>
@@ -104,17 +104,9 @@ export function HomeA() {
                     className="rounded-3  shadow "
                   >
                     <button class="btn btn-success" type="button">
-                      <a class="my-link" href="ProduccionProd">
+                      <a class="my-link" href="AdmProductos">
                         Productos
                       </a>
-                    </button>
-                  </div>
-                  <div
-                    class="d-grid gap-2 d-md-block"
-                    className="rounded-3  shadow "
-                  >
-                    <button class="btn btn-success" type="button">
-                      Pedidos
                     </button>
                   </div>
                 </div>

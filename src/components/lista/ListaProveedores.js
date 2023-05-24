@@ -218,13 +218,6 @@ const ListaProveedores = () => {
                             aria-label="Nombre"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -239,13 +232,6 @@ const ListaProveedores = () => {
                             aria-label="Apellido"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -260,13 +246,6 @@ const ListaProveedores = () => {
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -277,17 +256,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Cuil"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -298,17 +270,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Correo"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -319,17 +284,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Provincia"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -340,17 +298,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Ciudad"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -361,17 +312,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Direccion"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -382,17 +326,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Telefono"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -403,17 +340,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Codigo Postal"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -424,17 +354,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Razon social"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
@@ -445,17 +368,10 @@ const ListaProveedores = () => {
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="Id"
+                            placeholder="Fecha de nacimiento"
                             aria-label="NId"
                             aria-describedby="button-addon2"
                           />
-                          <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                          >
-                            B
-                          </button>
                         </div>
                       </td>
                     </tr>
