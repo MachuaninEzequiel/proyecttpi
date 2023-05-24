@@ -33,4 +33,4 @@ export { default as ListaDeudores } from "./DEUDORES/ListaDeudores";
 export { default as ListaStock } from "./stock/ListaStock";
 export { default as ListaCompras } from "./COMPRAS/ListaCompras";
 export { default as RegUsuarios } from "./usuarios/Usuarios";
-export { default as Usuariooo1 } from "./usuarios/Usuarioo1";
+export { default as Usuarioo1 } from "./usuarios/Usuarioo";

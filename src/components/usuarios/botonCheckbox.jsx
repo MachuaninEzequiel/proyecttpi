@@ -22,4 +22,4 @@ export const BotonCheckBox = () => {
     </div>
   );
 };
-export default BotonCheckBox;
+ export default BotonCheckBox;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./usuari.css";
-import imgReporMP from "./asset/img/pedidos.jpeg";
+
 import { FaFileDownload } from "react-icons/fa";
 import { FaFilter } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
@@ -162,13 +162,14 @@ export class ListaUsuario extends React.Component {
                     paddingLeft: "15px",
                   }}
                 >
-                  <h2> Necesitamos que ande</h2>
+                  <h2>Usuarios</h2>
                 </div>
                 <div className="procBotonos">
                   <div style={{ marginRight: "50px" }}>
                     <Button color="success">
-                      <a class="my-link" href="RegProv">
-                        New
+                      <a class="my-link" href="AdmRegUsuario">
+                        {" "}
+                        New{" "}
                       </a>
                     </Button>
                   </div>
